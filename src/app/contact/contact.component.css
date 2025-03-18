@@ -1,0 +1,150 @@
+.title{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+.title span::before,
+.title span::after {
+    content: " ";
+    width:100px;
+    height:4px;
+    display: inline-block;
+    background-color:#ffffff;
+    margin: 10px;
+    vertical-align: middle;
+}
+.text{
+    font-size: 1.05rem;
+    color: #d0d0d0;
+    line-height: 1.7;
+}
+.contact{
+    padding: 5rem 0 2.5rem 0;
+}
+.contact > .text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+.contact .row{
+    margin: 1rem 0;
+}
+
+.contact .row > div{
+    margin: 2.5rem 0;
+    padding: 2rem 0;
+}
+.contact .col-left h2{
+    text-transform: capitalize;
+    color:#fff;
+}
+.contact-info h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #d0d0d0;
+}
+.contact .contact-info{
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+.contact .contact-info > span{
+    color: #0ef;
+    font-size: 2.6rem;
+    margin-right: 1.2rem;
+}
+
+.contact .contact-info h3{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.contact .contact-info h3 span{
+    text-transform: uppercase;
+    font-size: 1.05rem;
+}
+.contact .contact-social-links{
+    display: flex;
+}
+.contact .contact-social-links a{
+    display: block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background: #252525;
+    margin: 0 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+.contact .contact-social-links a:first-child{
+    margin-left: 0;
+}
+.contact .contact-social-links a:hover{
+    background: #0ef;
+}
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    margin: 1rem 0;
+    background: #252525;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 25px;
+    outline: 0;
+    caret-color: #fff;
+    color:#fff;
+}
+.btn{
+    border: none;
+    margin: 1rem 0;
+    border-radius: 35px;
+    background: #0ef;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+    border-color: #0ef;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 500px){
+
+    .contact-form .form-group{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+    .contact .row > div{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .contact .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+}
+@media screen and (min-width: 1200px){
+
+}
